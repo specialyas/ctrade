@@ -1,0 +1,257 @@
+:root {
+  --black: #3c3c3c;
+  --dark-green: #0b6b2b;
+  --white: #eff6ff;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+html,
+body {
+  height: 100%;
+  width: 100%;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  color: var(--black);
+  font-size: 15px;
+  font-weight: 500;
+  background: #fff;
+  line-height: 1.5;
+}
+
+/* NAV BAR  */
+nav {
+  width: 100%;
+  height: 70px;
+  /* position: fixed; */
+  color: var(--black);
+  background-color: var(--white);
+  box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.25);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0px 40px;
+}
+
+.nav-actions a {
+  text-decoration: none;
+  text-transform: uppercase;
+  margin: 10px;
+  color: #28384c;
+  font-size: 12px;
+  background: transparent;
+  font-size: 13px;
+  font-weight: 500;
+  line-height: 38px;
+  margin: 0 8.5px;
+  transition: all 0.35s ease;
+}
+
+.nav-actions a:hover {
+  color: var(--dark-green);
+}
+nav .nav-title img {
+  width: 135px;
+}
+
+.btn-start-trading {
+  padding: 10px;
+  border: 4px solid #0b6b2b;
+  border-radius: 40px;
+  box-sizing: border-box;
+}
+
+.btn-start-trading:hover {
+  background-color: #0b6b2b;
+  color: #fff;
+}
+
+/* END OF NAV  */
+
+/* MAIN  */
+
+/* INTRO  */
+main section.intro {
+  margin-right: 40px;
+  display: flex;
+  margin-top: 40px;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+section.intro h1 {
+  font-size: 2.93em;
+}
+
+.trade {
+  width: 450px;
+  text-align: center;
+}
+.trade p {
+  font-size: 1.27em;
+  line-height: 1.68;
+  color: #ff6600;
+}
+.trade-btn {
+  padding-top: 20px;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.trade-btn a {
+  text-decoration: none;
+  text-transform: uppercase;
+  display: inline-block;
+  border: 1px solid var(--dark-green);
+  padding: 10px 30px;
+  border-radius: 40px;
+  color: #fff;
+  font-size: 12px;
+  font-weight: 600;
+}
+
+.trade-btn a:first-child {
+  background-color: var(--dark-green);
+}
+
+.trade-btn a:last-child {
+  background-image: linear-gradient(to right, #ff6600 0%, #009933 100%);
+}
+
+.trade-btn a:last-child:hover {
+  background-image: linear-gradient(to right, #009933 0%, #ff6600 100%);
+}
+
+/* GET STARTED  */
+.get-started,
+.choose-us {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  width: 720px;
+  margin: 100px auto;
+}
+
+.get-started-content,
+.choose-us-content {
+  width: 330px;
+  align-self: flex-start;
+}
+
+.get-started-content h2,
+.choose-us h1 {
+  line-height: 1.33;
+  font-weight: 500;
+  font-size: 2em;
+  margin: 0 0 20px;
+}
+
+.get-started-assets img,
+.choose-us img {
+  width: 270px;
+}
+
+.get-started p {
+  line-height: 2;
+}
+
+/* CHOOSE US  */
+
+.choose-us-content {
+  line-height: 2;
+}
+
+.choose-us-content p {
+  font-size: 1.27em;
+  line-height: 1.68;
+  font-weight: 300;
+  margin: 10px 0px;
+}
+
+/* HOW IT WORKS  */
+.how-it-works {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+/* TRADE WITH US  */
+.trade-cards-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+
+  width: 80%;
+  margin: 100px auto 0px;
+}
+
+.trade-card {
+  width: 210px;
+  height: 300px;
+  background-color: #eee;
+  margin: 20px;
+  border-radius: 5px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.trade-card a {
+  text-decoration: none;
+  border: #ddd 1px solid;
+  display: inline-block;
+  padding: 10px 20px;
+  border-radius: 40px;
+  color: var(--black);
+  background-color: #ebebeb;
+}
+
+.trade-card a:hover {
+  background-color: #d9d8d8;
+}
+
+/* REVIEWS */
+.reviews-cards-container {
+  display: flex;
+
+  margin: 80px 20px;
+}
+
+.review-card {
+  min-width: 300px;
+  height: 350px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #fafafa;
+  margin: 10px;
+  padding: 15px;
+  border-radius: 8px;
+  text-align: center;
+  line-height: 2;
+  box-shadow: 0px 10px 15px rgba(0, 0, 0, 0.25);
+}
+
+.review-card img {
+  box-sizing: border-box;
+  width: 80%;
+}
+
+.review-card h5 {
+  line-height: 1.33;
+  font-weight: 500;
+  color: #28384c;
+  font-size: 1.5em;
+}
