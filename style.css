@@ -2,6 +2,8 @@
   --black: #3c3c3c;
   --dark-green: #0b6b2b;
   --white: #eff6ff;
+  --light-blue: #e9f1ff;
+  --dark-green: #009933;
 }
 
 * {
@@ -222,15 +224,22 @@ section.intro h1 {
 }
 
 /* REVIEWS */
+
+.reviews-container {
+  margin: 80px 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
 .reviews-cards-container {
   display: flex;
-
-  margin: 80px 20px;
 }
 
 .review-card {
-  min-width: 300px;
-  height: 350px;
+  width: 300px;
+  height: 400px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -254,4 +263,116 @@ section.intro h1 {
   font-weight: 500;
   color: #28384c;
   font-size: 1.5em;
+}
+
+/* HELP AND SUPPORT  */
+.supports {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.contacts {
+  display: flex;
+  align-items: center;
+  margin: 30px 0px;
+}
+
+.contacts-card {
+  box-sizing: content-box;
+  margin-left: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.contacts-card a {
+  text-decoration: none;
+  color: var(--black);
+  display: flex;
+}
+
+.contacts-card i {
+  font-size: 25px;
+  margin-right: 12px;
+  background-color: var(--dark-green);
+  padding: 10px;
+  border-radius: 50%;
+  color: #fff;
+}
+.form-group {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+.contact-form {
+  background-color: var(--light-blue);
+  width: 40%;
+  padding: 20px;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.contact-form input {
+  background-color: transparent;
+  box-sizing: border-box;
+  width: 100%;
+  display: block;
+  font-size: 18px;
+  margin-top: 10px;
+  padding: 10px;
+  border: none;
+  border-bottom: 0.75px solid var(--dark-green);
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+.contact-form input:focus {
+  outline: none;
+}
+
+.contact-form button {
+  margin-top: 10px;
+  border: none;
+  border-radius: 35px;
+  padding: 15px;
+  background-color: var(--dark-green);
+  font-weight: 600;
+  color: #fff;
+  text-transform: uppercase;
+}
+
+/* FOOTER */
+
+footer {
+  background-color: var(--light-blue);
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+
+  margin-top: 80px;
+  height: 210px;
+}
+
+footer .socials {
+  width: 200px;
+  display: flex;
+  justify-content: space-around;
+}
+
+.socials a {
+  text-decoration: none;
+  font-size: 20px;
+  color: var(--black);
+}
+
+.copyrights {
+  margin-top: 40px;
 }
