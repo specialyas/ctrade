@@ -19,7 +19,7 @@
       <div class="nav-title">
         <img src="./assets/logo.png" alt="" />
       </div>
-      <div class="nav-actions">
+      <div class="nav-actions" id="first-nav">
         <a href="">Home</a>
         <a href="" class="btn-nav-actions">About Domtrade</a
         ><a href="" class="btn-nav-actions">Start Trading</a
@@ -27,7 +27,35 @@
 
         <a href="" class="btn-start-trading">Start Tradding</a>
       </div>
+      <div class="toggle" id="toggle-nav">
+        <i class="fa-solid fa-bars"></i>
+      </div>
     </nav>
+
+    <!-- COLLAPSE NAV BAR  -->
+    <div class="navbar-collapse" id="second-nav">
+      <ul id="nav-collapse-list" class="">
+        <li id="" class="">
+          <a href="#intro" class="nav-link">Home</a>
+        </li>
+        <li class="">
+          <a href="#aboutdomtrade" class="nav-link">About DomTrade</a>
+        </li>
+        <li class="">
+          <a href="#starttrading" class="nav-link">Start Trading</a>
+        </li>
+        <li>
+          <a href="#contact" class="nav-link">Contact us</a>
+        </li>
+      </ul>
+      <ul class="">
+        <li class="start-trading">
+          <a class="btn-start-trading" href="#starttrading">Start Trading</a>
+        </li>
+      </ul>
+    </div>
+
+    <!-- END OF COLLAPSE NAVBAR  -->
     <main>
       <!-- INTRO  -->
       <section class="intro">
@@ -102,8 +130,6 @@
       <div class="how-it-works">
         <h1>HOW IT WORK</h1>
         <iframe
-          width="720"
-          height="400"
           src="https://www.youtube.com/embed/WO-O2K_Fqw0"
           title="Bitcoin Cryptocurrency For Beginners 2023"
           frameborder="0"
@@ -161,7 +187,7 @@
       </div>
 
       <!-- REVIEWS  -->
-      <div class="reviews-container" style="">
+      <!-- <div class="reviews-container" style="">
         <h2 class="reviews">CUSTOMER REVIEWS</h2>
         <div class="reviews-cards-container">
           <!-- <div class="review-card">
@@ -182,7 +208,7 @@
             <h5>Trump</h5>
             <p>It's awesome, and fast with delivery</p>
           </div> -->
-          <!-- <div class="review-card">
+      <!-- <div class="review-card">
             <img src="./assets/reviews/1.png" alt="" />
             <h5>Trump</h5>
             <p>
@@ -190,7 +216,7 @@
               assure of prompt trasactions
             </p>
           </div> -->
-          <div class="review-card">
+      <!-- <div class="review-card">
             <img src="./assets/reviews/1.png" alt="" />
             <h5>Trump</h5>
             <p>It's awesome, and fast with delivery</p>
@@ -203,8 +229,9 @@
               assure of prompt trasactions
             </p>
           </div>
-        </div>
-      </div>
+        </div> -->
+      <!-- </div> -->
+      -->
 
       <!-- HELP AND SUPPORTS  -->
       <div class="supports">
@@ -266,5 +293,6 @@
       </div>
       <div class="copyrights">Copyright by CompanyName</div>
     </footer>
+    <script src="./script.js"></script>
   </body>
 </html>
