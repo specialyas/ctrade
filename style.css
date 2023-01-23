@@ -469,6 +469,12 @@ footer .socials {
   }
 }
 
+@media (max-width: 720px) {
+  .reviews-cards-container {
+ 
+  }
+}
+
 @media (max-width: 650px) {
   .intro,
   .get-started,
