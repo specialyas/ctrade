@@ -61,7 +61,7 @@ nav {
   color: var(--dark-green);
 }
 nav .nav-title img {
-  width: 135px;
+  width: 75px;
 }
 
 /* COLLAPSE NAV BAR  */
@@ -471,7 +471,6 @@ footer .socials {
 
 @media (max-width: 720px) {
   .reviews-cards-container {
- 
   }
 }
 
