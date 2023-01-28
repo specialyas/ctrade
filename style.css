@@ -432,7 +432,10 @@ footer .socials {
   aspect-ratio: 16 / 9;
   width: 100%;
 }
-
+.how-it-works video {
+  aspect-ratio: 16 / 9;
+  width: 100%;
+}
 /* show nav */
 
 .show-nav {
