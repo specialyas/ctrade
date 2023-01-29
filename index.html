@@ -48,6 +48,83 @@
     />
 
     <!-- END OF SEO  -->
+
+    <!-- FAVICON -->
+    <link
+      rel="apple-touch-icon"
+      sizes="57x57"
+      href="./assets/favicon/apple-icon-57x57.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="60x60"
+      href="./assets/favicon/apple-icon-60x60.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="72x72"
+      href="./assets/favicon/apple-icon-72x72.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="76x76"
+      href="./assets/favicon/apple-icon-76x76.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="114x114"
+      href="./assets/favicon/apple-icon-114x114.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="120x120"
+      href="./assets/favicon/apple-icon-120x120.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="144x144"
+      href="./assets/favicon/apple-icon-144x144.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="152x152"
+      href="./assets/favicon/apple-icon-152x152.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="./assets/favicon/apple-icon-180x180.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="192x192"
+      href="./assets/favicon/android-icon-192x192.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/favicon/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="96x96"
+      href="./assets/favicon/favicon-96x96.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="./assets/favicon/favicon-16x16.png"
+    />
+    <link rel="manifest" href="/manifest.json" />
+    <meta name="msapplication-TileColor" content="#ffffff" />
+    <meta name="msapplication-TileImage" content="/ms-icon-144x144.png" />
+    <meta name="theme-color" content="#ffffff" />
+
+    <!-- END OF FAVICON  -->
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
@@ -65,10 +142,17 @@
       <div class="nav-actions" id="first-nav">
         <a href="">Home</a>
         <a href="" class="btn-nav-actions">About Jay’increaz HuB</a
-        ><a href="" class="btn-nav-actions">Start Trading</a
-        ><a href="" class="btn-nav-actions">Contact Us</a>
+        ><a
+          href="https://api.whatsapp.com/send?phone=+2347044798565&amp;text=I Want to trade crypto what\'s your rates?"
+          class="btn-nav-actions"
+          >Start Trading</a
+        ><a href="#supports" class="btn-nav-actions">Contact Us</a>
 
-        <a href="" class="btn-start-trading">Start Tradding</a>
+        <a
+          href="https://api.whatsapp.com/send?phone=+2347044798565&amp;text=I Want to trade crypto what\'s your rates?"
+          class="btn-start-trading"
+          >Start Tradding</a
+        >
       </div>
       <div class="toggle" id="toggle-nav">
         <i class="fa-solid fa-bars"></i>
@@ -90,7 +174,7 @@
           <a href="#starttrading" class="nav-link">Start Trading</a>
         </li>
         <li>
-          <a href="#contact" class="nav-link">Contact us</a>
+          <a href="#contactus" class="nav-link">Contact us</a>
         </li>
       </ul>
       <ul class="">
@@ -114,14 +198,20 @@
             cards.
           </p>
           <div class="trade-btn">
-            <a href="">Get Started</a>
-            <a href="">Start Trading</a>
+            <a
+              href="https://api.whatsapp.com/send?phone=+2347044798565&amp;text=I Want to trade crypto what\'s your rates?"
+              >Get Started</a
+            >
+            <a
+              href="https://api.whatsapp.com/send?phone=+2347044798565&amp;text=I Want to trade crypto what\'s your rates?"
+              >Start Trading</a
+            >
           </div>
         </div>
       </section>
 
       <!-- GET STARTED  -->
-      <section class="get-started">
+      <section class="get-started" id="starttrading">
         <div class="get-started-content">
           <h2>Get Started with Jay’increaz HuB</h2>
           <p>
@@ -188,7 +278,7 @@
         <div
           class="trade-card"
           v-for="coin in coins"
-          :style="'background: url(./assets/coins/'+coin.name+'.png)'"
+          :style="'background: url(./assets/coins/'+coin.name.trim().replace(' ', '')+'.png)'"
         >
           <a
             :href="'https://api.whatsapp.com/send?phone=+2347044798565&amp;text=I Want to trade '+ coin.name +' what\'s your rates?'"
@@ -250,13 +340,13 @@
       </div>
 
       <!-- HELP AND SUPPORTS  -->
-      <div class="supports">
+      <div class="supports" id="supports">
         <h1 class="support-header">HELP & SUPPORT</h1>
         <p>
           Please contact us if you require assistance with any of our services,
           and we will respond to you right away.
         </p>
-        <div class="contacts">
+        <div class="contacts" id="contactus">
           <div class="contacts-card">
             <i class="fa-solid fa-phone"></i>
             <a href="tel:+2347044798565"> +234 704 479 8565</a>
@@ -271,7 +361,7 @@
           <div class="contacts-card">
             <i class="fa-brands fa-whatsapp"></i>
             <a
-              href="'https://api.whatsapp.com/send?phone=+2347044798565"
+              href="https://api.whatsapp.com/send?phone=+2347044798565&amp;text=I Want to trade crypto what\'s your rates?"
               target="_blank"
             >
               +234 704 479 8565
