@@ -507,6 +507,7 @@ footer .socials {
   .get-started {
     justify-content: center;
     align-items: center;
+    flex-direction: column-reverse;
   }
 
   .get-started-content {
