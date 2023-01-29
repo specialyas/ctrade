@@ -14,7 +14,7 @@
     />
     <link rel="stylesheet" href="./style.css" />
   </head>
-  <body>
+  <body id="app">
     <nav>
       <div class="nav-title">
         <img src="./assets/new_logo.png" alt="" />
@@ -127,7 +127,7 @@
       </div>
 
       <!-- HOW IT WORKS  -->
-      <div class="how-it-works">
+      <div class="how-it-works" id="how-it-works">
         <h1>HOW IT WORK</h1>
         <!-- <iframe
           src="https://www.youtube.com/embed/WO-O2K_Fqw0"
@@ -137,59 +137,27 @@
           allowfullscreen
         ></iframe> -->
 
-        <video id="how-it-works" src="./assets/video.mp4" controls></video>
+        <video src="./assets/video.mp4" controls></video>
       </div>
 
       <!-- TRADE WITH US  -->
       <div class="trade-cards-container">
-        <div class="trade-card">
-          <p>Bitcoin</p>
-          <a href="">Bitcoin</a>
-        </div>
-        <div class="trade-card">
-          <p>Etherium</p>
-          <a href="">Etherium</a>
-        </div>
-        <div class="trade-card">
-          <p>Tether</p>
-          <a href="">Tether</a>
-        </div>
-        <div class="trade-card">
-          <p>Perfect Money</p>
-          <a href=""> Perfect Money</a>
-        </div>
-        <div class="trade-card">
-          <p>Walmart</p>
-          <a href=""> Walmart </a>
-        </div>
-        <div class="trade-card">
-          <p>iTunes</p>
-          <a href="">iTunes</a>
-        </div>
-        <div class="trade-card">
-          <p>Google Play</p>
-          <a href="">Google Play</a>
-        </div>
-        <div class="trade-card">
-          <p>Vanilla</p>
-          <a href="">Vanilla</a>
-        </div>
-        <div class="trade-card">
-          <p>Amazon</p>
-          <a href="">Amazon</a>
-        </div>
-        <div class="trade-card">
-          <p>Ebay</p>
-          <a href="">Ebay</a>
-        </div>
-        <div class="trade-card">
-          <p>Amex Steam</p>
-          <a href="">Amex Steam</a>
+        <div
+          class="trade-card"
+          v-for="coin in coins"
+          :style="'background: url(./assets/coins/'+coin.name+'.png)'"
+        >
+          <a
+            :href="'https://api.whatsapp.com/send?phone=+2347044798565&amp;text=I Want to trade '+ coin.name +' what\'s your rates?'"
+            target="_blank"
+          >
+            Sell {{coin.name[0].toUpperCase() + coin.name.substring(1)}}</a
+          >
         </div>
       </div>
 
       <!-- REVIEWS  -->
-      <div class="reviews-container" style="">
+      <div class="reviews-container">
         <h2 class="reviews">CUSTOMER REVIEWS</h2>
         <div class="reviews-cards-container">
           <div class="review-card">
@@ -248,16 +216,23 @@
         <div class="contacts">
           <div class="contacts-card">
             <i class="fa-solid fa-phone"></i>
-            <a href="tel:+17868979"> +1 786 8979</a>
+            <a href="tel:+2347044798565"> +234 704 479 8565</a>
           </div>
           <div class="contacts-card">
             <i class="fa-solid fa-envelope"></i>
-            <a href="mailto:example@example.com"> example@example.com</a>
+            <a href="mailto:Jayincreazhub56@gmail.com">
+              Jayincreazhub56@gmail.com</a
+            >
           </div>
 
           <div class="contacts-card">
             <i class="fa-brands fa-whatsapp"></i>
-            <a href="mailto:example@example.com"> +1 786 8979 </a>
+            <a
+              href="'https://api.whatsapp.com/send?phone=+2347044798565"
+              target="_blank"
+            >
+              +234 704 479 8565
+            </a>
           </div>
         </div>
 
@@ -298,6 +273,9 @@
       </div>
       <div class="copyrights">Copyright @Jay’increaz</div>
     </footer>
+    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+
+    <script src="./support-script.js"></script>
     <script src="./script.js"></script>
   </body>
 </html>
