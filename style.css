@@ -16,6 +16,7 @@ html,
 body {
   height: 100%;
   width: 100vw;
+  background-image: url("./assets/duplicate_logo\ 1.jpg");
 }
 
 body {
@@ -464,6 +465,13 @@ footer .socials {
 .trade-card ::first-letter {
   text-transform: capitalize;
 }
+
+.choose-us {
+  background-image: url("./assets/background\ 2.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  backdrop-filter: grayscale(0.5) opacity(0.8);
+}
 /* RESPONSIVE  */
 
 @media (max-width: 820px) {
@@ -504,6 +512,7 @@ footer .socials {
     flex-direction: column;
     margin: 50px 0px;
   }
+
   .get-started {
     justify-content: center;
     align-items: center;
